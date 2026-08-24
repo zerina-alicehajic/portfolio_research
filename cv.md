@@ -1,11 +1,10 @@
 ---
 layout: single
-title: "Curriculum Vitae"
+title: "Curriculum Vitae: Zerina Aličehajić"
 permalink: /cv/
 author_profile: true
 ---
 
-# Zerina Aličehajić
 
 **Economics & Management Graduate**  
 📍 Grbavička 66, 71000, Sarajevo, Bosnia and Herzegovina  
