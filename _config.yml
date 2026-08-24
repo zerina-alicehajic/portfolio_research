@@ -1,11 +1,43 @@
 title: "Zerina Aličehajić"
-description: "Economics, Policy & Geopolitics"
+subtitle: "Economics, Policy & Geopolitics"
+name: "Zerina Aličehajić"
+bio: "bacc. Management (MIT) | M.Sc. Candidate at EFSA"
+location: "Sarajevo, BiH"
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air" # Options: "air", "aqua", "dirt", "mint", "sunrise"
+
 url: "https://zerina-alicehajic.github.io"
 baseurl: ""
 
-theme: minima
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-include-cache
 
-header_pages:
-  - index.md
-  - cv.md
-  - blog.md
+author:
+  name: "Zerina Aličehajić"
+  avatar: "/assets/images/profile.jpg" # Optional: add your picture to this path later
+  bio: "bacc. Management (MIT) | M.Sc. Candidate at EFSA"
+  location: "Sarajevo, BiH"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zerina-alicehajic"
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
