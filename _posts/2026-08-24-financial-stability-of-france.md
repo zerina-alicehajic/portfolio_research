@@ -363,58 +363,49 @@ Washington, D.C.: World Bank.
 16. World Gold Council (2024). "Gold Demand Trends / Central Bank Holdings." Available at:
 https://www.gold.org (Accessed: 08.06.2026.)
 
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
 
-<div class="carousel-gallery" style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding: 20px 0; -webkit-overflow-scrolling: touch;">
-
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Tabela 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Tabela 1: Osnovni makroekonomski indikatori Francuske (2010–2024)</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 1: Basic Macroeconomic Indicators of France (2010–2024)</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Tabela 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Tabela 2: Pregled platnog bilansa i duga</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 2: Overview of Balance of Payments and Public Debt</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Tabela 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Tabela 3: NIIP sa i bez zlatnih rezervi (2010–2024)</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Tabela 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Tabela 4: Struktura eksterne aktive i pasive Francuske</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 4: Structure of France's External Assets and Liabilities</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Grafikon 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Grafikon 1: Međunarodna neto investiciona pozicija Francuske (2010–2024)</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 1: Net International Investment Position of France (2010–2024)</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Grafikon 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Grafikon 2: Eksterna sredstva i obaveze Francuske (2010–2024)</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 2: France's External Assets and Liabilities (Financial Globalization Indicator)</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Grafikon 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Grafikon 3: Indeks finansijske globaliziranosti Francuske</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 3: Financial Globalization Index of France (Total Assets + Liabilities / GDP)</em></p>
   </div>
 
-  <div style="scroll-snap-align: center; flex: 0 0 85%; max-width: 650px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Grafikon 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; margin-top: 8px; color: #555;"><em>Grafikon 4: Platni bilans – Tekući račun Francuske (2010–2024)</em></p>
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 4: Balance of Payments – Current Account Balance of France (2010–2024)</em></p>
   </div>
 
 </div>
-
-
-
-
-
-
-
-
 
 
 
