@@ -7,8 +7,7 @@ author_profile: true
 
 
 **Economics & Management Graduate**  
-📍 Grbavička 66, 71000, Sarajevo, Bosnia and Herzegovina  
-📱 +387 62 804 614 | ✉️ zerina0703@gmail.com  
+  ✉️ zerina0703@gmail.com  
 
 ---
 
