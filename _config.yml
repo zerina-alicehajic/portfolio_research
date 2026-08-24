@@ -1,14 +1,10 @@
 title: "Zerina Aličehajić"
 subtitle: "Economics, Policy & Geopolitics"
-name: "Zerina Aličehajić"
-bio: "bacc. Management (MIT) | M.Sc. Candidate at EFSA"
-location: "Sarajevo, BiH"
-
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air" # Options: "air", "aqua", "dirt", "mint", "sunrise"
-
 url: "https://zerina-alicehajic.github.io"
 baseurl: "/portfolio_research"
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
 
 plugins:
   - jekyll-remote-theme
