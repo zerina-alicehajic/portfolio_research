@@ -1,10 +1,12 @@
 ---
-layout: essay
-title: "The Geopolitics of Critical Minerals: EU Strategy in an Era of Weaponized Interdependence"
-subtitle: "An examination of raw material supply chains, industrial vulnerability, and trade policy remedies."
-category: "Special Report"
+layout: single
+title: "The Geopolitics of Critical Minerals"
+excerpt: "An examination of raw material supply chains, industrial vulnerability, and trade policy remedies."
+header:
+  overlay_filter: 0.5
 date: 2026-08-24
-read_time: 8
+permalink: /blog/geopolitics-critical-minerals/
+author_profile: true
 author: "Zerina Aličehajić"
 ---
 
