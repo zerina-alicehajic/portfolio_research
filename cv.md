@@ -1,17 +1,18 @@
 ---
-layout: page
-title: CV
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
+author_profile: true
 ---
-
-# Curriculum Vitae
 
 ### Education
-* **Master of Economics** – School of Economics and Business Sarajevo (EFSA)
-* **Bachelor of Management** – Management Information Technology (MIT)
-
-### Experience
-* **Academic & Applied Research** – Development Economics, Trade Policy, & Econometric Modeling
+* **M.Sc. in Economics** (Global Economy & European Integration)  
+  *School of Economics and Business Sarajevo (EFSA)*
+* **B.A. in Management** (Major: Management Information Technology)  
+  *School of Economics and Business Sarajevo (EFSA)*
 
 ---
-*Download full CV as PDF [here](#).*
+
+### Technical Skills
+* **Data & Econometrics:** Stata, IBM SPSS, Python, Microsoft Excel
+* **Languages:** Bosnian (Native), English (Fluent), German (C1 - DSD II)
