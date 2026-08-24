@@ -7,6 +7,13 @@ author_profile: true
 ---
 
 <style>
+  /* Custom Page Layout & Narrower Side Margins */
+  .page__inner-wrap {
+    max-width: 1200px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
   /* Lightbox Modal CSS */
   .modal-toggle { display: none; }
   .modal-overlay {
