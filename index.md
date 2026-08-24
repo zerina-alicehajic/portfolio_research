@@ -1,10 +1,15 @@
 ---
-layout: home
-title: Home
+layout: single
+title: "Welcome"
+permalink: /
+author_profile: true
 ---
 
-# Welcome
+# About Me
 
-Hello! I'm Zerina Aličehajić. I specialize in economics, policy, and geopolitics.
+Welcome to my personal site. I am a master's student in economics specializing in global economy and European integration, with a background in management information technology.
 
-Feel free to explore my CV or check out my recent blog posts using the navigation menu above.
+### Research Interests
+* **Development Economics & Trade Policy**
+* **Econometrics & Applied Macroeconomics**
+* **Geopolitics & Supply Chain Networks**
