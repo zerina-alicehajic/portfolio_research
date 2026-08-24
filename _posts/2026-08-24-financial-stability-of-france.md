@@ -4,9 +4,6 @@ title: "Analysis of financial stability and international investment position of
 date: 2026-08-24
 permalink: /blog/financial-stability-of-france/
 author_profile: true
-sidebar:
-  show_date: true
-  profile: true
 ---
 
 ---
@@ -454,6 +451,102 @@ https://www.gold.org (Accessed: 08.06.2026.)
       <div class="modal-box">
         <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 6px;">
         <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 2: Overview of Balance of Payments and Public Debt (2010–2024)</p>
+      </div>
+    </label>
+  </div>
+
+<!-- Table 3 -->
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <label for="modal-t3">
+      <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-t3" class="modal-toggle">
+    <label for="modal-t3" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves</p>
+      </div>
+    </label>
+  </div>
+
+  <!-- Table 4 -->
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <label for="modal-t4">
+      <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 4: Structure of France's External Assets and Liabilities (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-t4" class="modal-toggle">
+    <label for="modal-t4" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 4: Structure of France's External Assets and Liabilities</p>
+      </div>
+    </label>
+  </div>
+
+  <!-- Graph 1 -->
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <label for="modal-g1">
+      <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 1: Net International Investment Position of France (2010–2024) (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g1" class="modal-toggle">
+    <label for="modal-g1" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 1: Net International Investment Position of France (2010–2024)</p>
+      </div>
+    </label>
+  </div>
+
+  <!-- Graph 2 -->
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <label for="modal-g2">
+      <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 2: France's External Assets and Liabilities (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g2" class="modal-toggle">
+    <label for="modal-g2" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 2: France's External Assets and Liabilities (Financial Globalization Indicator)</p>
+      </div>
+    </label>
+  </div>
+
+  <!-- Graph 3 -->
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <label for="modal-g3">
+      <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 3: Financial Globalization Index of France (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g3" class="modal-toggle">
+    <label for="modal-g3" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 3: Financial Globalization Index of France (Total Assets + Liabilities / GDP)</p>
+      </div>
+    </label>
+  </div>
+
+  <!-- Graph 4 -->
+  <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
+    <label for="modal-g4">
+      <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 4: Balance of Payments – Current Account Balance (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g4" class="modal-toggle">
+    <label for="modal-g4" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 4: Balance of Payments – Current Account Balance of France (2010–2024)</p>
       </div>
     </label>
   </div>
