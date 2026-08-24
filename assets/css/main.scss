@@ -7,43 +7,37 @@ $global-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Rob
 $header-font-family: 'Newsreader', Georgia, serif;
 $base-font-size: 18px;
 
-// Force Minimal Mistakes Layout Widths
+// Set container widths (Allows room for left sidebar + main content)
 $max-width: 1400px;
-$right-sidebar-width: 0px;
-$right-sidebar-width-narrow: 0px;
 
 // 2. Import Minimal Mistakes Framework
 @import "minimal-mistakes";
 
-// 3. Force Container Width Expansion
+// 3. Main Container & Typography
 #main {
-  max-width: 1300px !important;
-  width: 100% !important;
-  margin: 0 auto !important;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
+// RESTORE SIDEBAR GRID:
+// Removed 'width: 100% !important' on .page so the layout column can coexist with the sidebar.
 .page {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding-right: 0 !important;
+  padding-right: 0;
 }
 
-/* Expands the actual article body text area */
 .page__inner-wrap {
-  max-width: 1050px !important; /* Made significantly wider */
-  width: 100% !important;
+  width: 100%;
 }
 
 .page__content {
-  max-width: 100% !important;
   font-size: 1.08rem;
   line-height: 1.7;
   color: #222222;
   text-align: justify;
   text-justify: inter-word;
-  word-spacing: -0.02em; /* Tightens text so justified spacing looks natural */
+  word-spacing: -0.02em;
   letter-spacing: -0.01em;
 }
 
