@@ -1,3 +1,8 @@
+---
+layout: single
+author_profile: true
+---
+
 title: "Zerina Aličehajić"
 subtitle: "Economics, Policy & Geopolitics"
 url: "https://zerina-alicehajic.github.io"
@@ -11,25 +16,36 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+# Site Author / Sidebar Profile
 author:
   name: "Zerina Aličehajić"
-  avatar: "assets/images/profilepic.jpg" # Removed leading slash for cleaner baseurl resolution
-  bio: "bacc. Management (MIT) | M.Sc. Candidate at EFSA"
+  avatar: "/assets/images/profilepic.jpg"
+  bio: "bacc. Management (MIT) | Graduate student- Department of Economics"
   location: "Sarajevo, BiH"
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/zerina-alicehajic"
+  employer: "EFSA"
+  linkedin: "https://linkedin.com/in/zerina-alicehajic"
+  github: "zerina-alicehajic"
+
       
 defaults:
-  # Applies author_profile to ALL files across the site
+  # _posts
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+  # _pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+  # Root files (like index.md or about.md)
   - scope:
       path: ""
     values:
       layout: "single"
       author_profile: true
-
 
