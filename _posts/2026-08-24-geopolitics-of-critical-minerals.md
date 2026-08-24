@@ -7,9 +7,6 @@ permalink: /blog/geopolitics-critical-minerals/
 author_profile: true
 ---
 
-**Author:** Zerina Aličehajić  
-
-
 ---
 
 ### Abstract
