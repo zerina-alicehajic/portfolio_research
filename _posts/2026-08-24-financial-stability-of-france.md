@@ -364,41 +364,60 @@ Washington, D.C.: World Bank.
 https://www.gold.org (Accessed: 08.06.2026.)
 
 <style>
-  .img-lightbox {
-    position: relative;
-    cursor: pointer;
-  }
-  .img-lightbox summary {
-    list-style: none;
-  }
-  .img-lightbox summary::-webkit-details-marker {
+  /* Hidden checkbox mechanism for full click-to-close overlay */
+  .modal-toggle {
     display: none;
   }
-  .img-lightbox[open] .lightbox-content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
-    max-width: 900px;
-    max-height: 85vh;
-    background: #ffffff;
-    padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    z-index: 9999;
-    overflow-y: auto;
-  }
-  .img-lightbox[open]::before {
-    content: "";
+  
+  .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
     z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .modal-box {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 90vw;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transform: scale(0.95);
+    transition: transform 0.25s ease;
+  }
+
+  /* Show modal when checked */
+  .modal-toggle:checked + .modal-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal-toggle:checked + .modal-overlay .modal-box {
+    transform: scale(1);
+  }
+
+  .clickable-img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .clickable-img:hover {
+    transform: scale(1.02);
   }
 </style>
 
@@ -406,114 +425,130 @@ https://www.gold.org (Accessed: 08.06.2026.)
 
   <!-- Table 1 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 1: Basic Macroeconomic Indicators of France (2010–2024)</p>
-      </div>
-    </details>
+    <label for="modal-t1">
+      <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 1: Basic Macroeconomic Indicators of France (2010–2024) (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-t1" class="modal-toggle">
+    <label for="modal-t1" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 1: Basic Macroeconomic Indicators of France (2010–2024)</p>
+      </div>
+    </label>
   </div>
 
   <!-- Table 2 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 2: Overview of Balance of Payments and Public Debt</p>
-      </div>
-    </details>
+    <label for="modal-t2">
+      <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 2: Overview of Balance of Payments and Public Debt (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-t2" class="modal-toggle">
+    <label for="modal-t2" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 2: Overview of Balance of Payments and Public Debt</p>
+      </div>
+    </label>
   </div>
 
   <!-- Table 3 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves</p>
-      </div>
-    </details>
+    <label for="modal-t3">
+      <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-t3" class="modal-toggle">
+    <label for="modal-t3" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves</p>
+      </div>
+    </label>
   </div>
 
   <!-- Table 4 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 4: Structure of France's External Assets and Liabilities</p>
-      </div>
-    </details>
+    <label for="modal-t4">
+      <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 4: Structure of France's External Assets and Liabilities (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-t4" class="modal-toggle">
+    <label for="modal-t4" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Table 4: Structure of France's External Assets and Liabilities</p>
+      </div>
+    </label>
   </div>
 
   <!-- Graph 1 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 1: Net International Investment Position of France (2010–2024)</p>
-      </div>
-    </details>
+    <label for="modal-g1">
+      <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 1: Net International Investment Position of France (2010–2024) (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g1" class="modal-toggle">
+    <label for="modal-g1" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 1: Net International Investment Position of France (2010–2024)</p>
+      </div>
+    </label>
   </div>
 
   <!-- Graph 2 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 2: France's External Assets and Liabilities (Financial Globalization Indicator)</p>
-      </div>
-    </details>
+    <label for="modal-g2">
+      <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 2: France's External Assets and Liabilities (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g2" class="modal-toggle">
+    <label for="modal-g2" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 2: France's External Assets and Liabilities (Financial Globalization Indicator)</p>
+      </div>
+    </label>
   </div>
 
   <!-- Graph 3 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
-        <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 3: Financial Globalization Index of France (Total Assets + Liabilities / GDP)</p>
-      </div>
-    </details>
+    <label for="modal-g3">
+      <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
     <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 3: Financial Globalization Index of France (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g3" class="modal-toggle">
+    <label for="modal-g3" class="modal-overlay">
+      <div class="modal-box">
+        <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 3: Financial Globalization Index of France (Total Assets + Liabilities / GDP)</p>
+      </div>
+    </label>
   </div>
 
   <!-- Graph 4 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <details class="img-lightbox">
-      <summary>
-        <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </summary>
-      <div class="lightbox-content">
+    <label for="modal-g4">
+      <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" class="clickable-img" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </label>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 4: Balance of Payments – Current Account Balance (Click to enlarge)</em></p>
+    
+    <input type="checkbox" id="modal-g4" class="modal-toggle">
+    <label for="modal-g4" class="modal-overlay">
+      <div class="modal-box">
         <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 6px;">
-        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 4: Balance of Payments – Current Account Balance of France (2010–2024)</p>
+        <p style="margin-top: 10px; color: #333; font-weight: bold; font-size: 0.95em;">Figure 4: Balance of Payments – Current Account Balance of France (2010–2024)</p>
       </div>
-    </details>
-    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 4: Balance of Payments – Current Account Balance of France (2010–2024) (Click to enlarge)</em></p>
+    </label>
   </div>
 
 </div>
