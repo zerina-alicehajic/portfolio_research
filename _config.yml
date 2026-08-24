@@ -3,11 +3,10 @@ subtitle: "Economics, Policy & Geopolitics"
 url: "https://zerina-alicehajic.github.io"
 baseurl: "/portfolio_research"
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "air"
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-include-cache
 
