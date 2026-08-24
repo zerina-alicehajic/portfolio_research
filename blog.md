@@ -3,6 +3,8 @@ layout: single
 title: "Blog & Analysis"
 permalink: /blog/
 author_profile: true
+sidebar:
+  nav: "main"
 ---
 Below you'll find my latest essays, research notes, and policy analyses.
 ---
