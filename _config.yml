@@ -17,7 +17,7 @@ plugins:
 
 author:
   name: "Zerina Aličehajić"
-  avatar: "/assets/images/profile.jpg" # Optional: add your picture to this path later
+  avatar: "/assets/images/profilepic.jpg" # Optional: add your picture to this path later
   bio: "bacc. Management (MIT) | M.Sc. Candidate at EFSA"
   location: "Sarajevo, BiH"
   links:
