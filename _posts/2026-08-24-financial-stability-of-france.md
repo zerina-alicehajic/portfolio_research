@@ -3,7 +3,6 @@ layout: single
 title: "Analysis of financial stability and international investment position of France: 2010-2024"
 date: 2026-08-24
 permalink: /blog/financial-stability-of-france/
-author_profile: true
 ---
 
 ---
