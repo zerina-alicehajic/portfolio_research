@@ -1,0 +1,91 @@
+/* ==========================================================================
+   EDITORIAL & JOURNALIST POST STYLING (Economist / Foreign Affairs Style)
+   ========================================================================== */
+
+/* Main Text & Alignment */
+.page__content {
+  font-family: "Georgia", "Cambria", "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #242424;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Header Meta Section */
+.meta-header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  color: #555555;
+  background: #f8f9fa;
+  border-left: 4px solid #102a43;
+  padding: 12px 18px;
+  margin-bottom: 2rem;
+}
+
+/* Executive Abstract Box */
+.abstract-box {
+  background-color: #f0f4f8;
+  border: 1px solid #d9e2ec;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #102a43;
+    border-bottom: none;
+  }
+}
+
+/* Clean Subheadings */
+.page__content h2,
+.page__content h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  color: #102a43;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Editorial Drop Cap (First Paragraph) */
+.page__content > p:nth-of-type(1)::first-letter {
+  font-size: 3.2em;
+  float: left;
+  margin-top: -0.15em;
+  margin-bottom: -0.2em;
+  margin-right: 0.15em;
+  color: #102a43;
+  font-family: "Georgia", serif;
+}
+
+/* Refined Blockquotes */
+.page__content blockquote {
+  font-style: italic;
+  background: #fdfcfa;
+  border-left: 3px solid #627d98;
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  color: #486581;
+}
+
+/* Bibliography Formatting */
+.bibliography-list {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: left;
+  
+  li {
+    margin-bottom: 0.6rem;
+  }
+}
