@@ -8,7 +8,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air" # Options: "air", "aqua", "dirt", "mint", "sunrise"
 
 url: "https://zerina-alicehajic.github.io"
-baseurl: ""
+baseurl: "/portfolio_research"
 
 plugins:
   - jekyll-remote-theme
