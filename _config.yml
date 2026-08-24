@@ -13,7 +13,7 @@ plugins:
 
 author:
   name: "Zerina Aličehajić"
-  avatar: "/assets/images/profilepic.jpg" # Optional: add your picture to this path later
+  avatar: "assets/images/profilepic.jpg" # Removed leading slash for cleaner baseurl resolution
   bio: "bacc. Management (MIT) | M.Sc. Candidate at EFSA"
   location: "Sarajevo, BiH"
   links:
@@ -23,17 +23,11 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zerina-alicehajic"
-
+      
 defaults:
+  # Applies author_profile to ALL files across the site
   - scope:
       path: ""
-      type: "pages"
-    values:
-      layout: "single"
-      author_profile: true
-  - scope:
-      path: ""
-      type: "posts"
     values:
       layout: "single"
       author_profile: true
