@@ -4,6 +4,9 @@ title: "Analysis of financial stability and international investment position of
 date: 2026-08-24
 permalink: /blog/financial-stability-of-france/
 author_profile: true
+sidebar:
+  show_date: true
+  profile: true
 ---
 
 ---
