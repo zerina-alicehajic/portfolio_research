@@ -1,0 +1,11 @@
+title: "Zerina Aličehajić"
+description: "Economics, Policy & Geopolitics"
+url: "https://zerina-alicehajic.github.io"
+baseurl: ""
+
+theme: minima
+
+header_pages:
+  - index.md
+  - cv.md
+  - blog.md
