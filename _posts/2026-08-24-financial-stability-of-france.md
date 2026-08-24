@@ -363,55 +363,157 @@ Washington, D.C.: World Bank.
 16. World Gold Council (2024). "Gold Demand Trends / Central Bank Holdings." Available at:
 https://www.gold.org (Accessed: 08.06.2026.)
 
+<style>
+  .img-lightbox {
+    position: relative;
+    cursor: pointer;
+  }
+  .img-lightbox summary {
+    list-style: none;
+  }
+  .img-lightbox summary::-webkit-details-marker {
+    display: none;
+  }
+  .img-lightbox[open] .lightbox-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    max-width: 900px;
+    max-height: 85vh;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  .img-lightbox[open]::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 9998;
+  }
+</style>
+
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 40px;">
 
+  <!-- Table 1 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 1: Basic Macroeconomic Indicators of France (2010–2024)</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Table 1.png' | relative_url }}" alt="Table 1" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 1: Basic Macroeconomic Indicators of France (2010–2024)</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 1: Basic Macroeconomic Indicators of France (2010–2024) (Click to enlarge)</em></p>
   </div>
 
+  <!-- Table 2 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 2: Overview of Balance of Payments and Public Debt</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Table 2.png' | relative_url }}" alt="Table 2" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 2: Overview of Balance of Payments and Public Debt</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 2: Overview of Balance of Payments and Public Debt (Click to enlarge)</em></p>
   </div>
 
+  <!-- Table 3 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Table 3.png' | relative_url }}" alt="Table 3" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 3: Net International Investment Position (NIIP) With and Without Gold Reserves (Click to enlarge)</em></p>
   </div>
 
+  <!-- Table 4 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Table 4: Structure of France's External Assets and Liabilities</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Table 4.png' | relative_url }}" alt="Table 4" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Table 4: Structure of France's External Assets and Liabilities</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Table 4: Structure of France's External Assets and Liabilities (Click to enlarge)</em></p>
   </div>
 
+  <!-- Graph 1 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 1: Net International Investment Position of France (2010–2024)</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Graph 1.png' | relative_url }}" alt="Figure 1" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 1: Net International Investment Position of France (2010–2024)</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 1: Net International Investment Position of France (2010–2024) (Click to enlarge)</em></p>
   </div>
 
+  <!-- Graph 2 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 2: France's External Assets and Liabilities (Financial Globalization Indicator)</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Graph 2.png' | relative_url }}" alt="Figure 2" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 2: France's External Assets and Liabilities (Financial Globalization Indicator)</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 2: France's External Assets and Liabilities (Click to enlarge)</em></p>
   </div>
 
+  <!-- Graph 3 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 3: Financial Globalization Index of France (Total Assets + Liabilities / GDP)</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Graph 3.png' | relative_url }}" alt="Figure 3" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 3: Financial Globalization Index of France (Total Assets + Liabilities / GDP)</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 3: Financial Globalization Index of France (Click to enlarge)</em></p>
   </div>
 
+  <!-- Graph 4 -->
   <div style="flex: 1 1 45%; min-width: 300px; text-align: center;">
-    <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.9em; color: #555; margin-top: 6px;"><em>Figure 4: Balance of Payments – Current Account Balance of France (2010–2024)</em></p>
+    <details class="img-lightbox">
+      <summary>
+        <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </summary>
+      <div class="lightbox-content">
+        <img src="{{ '/assets/images/Graph 4.png' | relative_url }}" alt="Figure 4" style="width: 100%; border-radius: 6px;">
+        <p style="margin-top: 10px; color: #333; font-weight: bold;">Figure 4: Balance of Payments – Current Account Balance of France (2010–2024)</p>
+      </div>
+    </details>
+    <p style="font-size: 0.85em; color: #666; margin-top: 6px;"><em>Figure 4: Balance of Payments – Current Account Balance of France (2010–2024) (Click to enlarge)</em></p>
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
